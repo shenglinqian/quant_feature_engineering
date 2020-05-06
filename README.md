@@ -2,7 +2,9 @@
  feature engineering for quant
 
 用于生成资产的特征工程项目，主要输入数据为价量数据，输出为短期涨跌或者是短期相对大盘的涨跌(超额收益)
+
 输入数据格式为dataframe,索引为date,字段为open	high	low	close	volume
+
 调用示例：
 import feature_engineering as fea_eng
 #生成特征函数列表
