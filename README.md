@@ -9,6 +9,7 @@
 import feature_engineering as fea_eng
 
 #生成特征函数列表
+
 feature_funcs=fea_eng.my_features_functions()
 
 my_func_name_list=feature_funcs.get_all_methold()
@@ -18,5 +19,6 @@ for func_name in my_func_name_list:
     func_list.append(eval("feature_funcs."+func_name))
 
 #生成特征,25是滚动天数
+
 my_fea_eng=fea_eng.feature_engineering(func_list,25)
 pip_df_result=my_fea_eng.output_feature(data)
